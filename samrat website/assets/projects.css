@@ -1,0 +1,117 @@
+.bg-section {
+    background-color: #d3d3d3;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+}
+
+.card {
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 1px 7px 15px #cecece;
+}
+
+.card-columns .card {
+    margin-bottom: 20px;
+}
+
+.accordion>.card {
+    overflow: hidden
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 247px;
+    object-fit: cover;
+}
+
+.card-des {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.card-links {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.card-links a {
+    font-weight: 600px;
+}
+
+.card-body {
+    padding: 15px 20px 20px 20px;
+
+}
+
+.card-footer {
+    background-color: #002c5c;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 15px 10px;
+}
+
+.card-link-item {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    font-weight: 500;
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+.magical-underline {
+    background-image: linear-gradient(120deg, #84fab0 0%, #70cfff 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 20px 85%;
+    transition: background-size 0.25s ease-in;
+}
+
+.tags{
+    margin: 10px 0;
+}
+
+.tag{
+    display: inline-block;
+    padding: 2px 7px 3px 7px;   
+    font-size: 12px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-weight: 500;
+    background-color: #D1FAE5;
+    color:#047857;
+}
+
+
+@media (min-width:576px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 4;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows: 1
+    }
+
+    .card-columns .card {
+        display: inline-block;
+        width: 100%
+    }
+
+    .card-columns.cols-2 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2
+    }
+}
